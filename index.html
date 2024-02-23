@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>App de viajes</h1>
+    </header>
+    <nav>
+        <button id="colombia">Colombia</button>
+        <button id="brazil">Brazil</button>
+        <button id="londres">Londres</button>
+    </nav>
+    <main>
+        <section id="destination-content"></section>
+        <form id="basic-data-form" hidden>
+            <input type="text" placeholder="Name" id="name" required>
+            <input type="email" placeholder="Email" id="email" required>
+            <input type="celular" placeholder="celular" id="celular" required>
+            <input type="confirmar_destino" placeholder="confirmar_destino" id="confirmar_destino" required>
+            <input type="fecha" placeholder="fecha" id="fecha" required>
+            <button type="submit">Submit</button>
+        </form>
+        <form id="query-form" hidden>
+            <label for="query-name">Name:</label>
+            <input type="text" id="query-name" required>
+            <label for="query-email">Email:</label>
+            <input type="email" id="query-email" required>
+            <button type="submit">Query</button>
+        </form>
+        <div id="query-content"></div>
+    </main>
+    <button id="consult-button">Consult</button>
+    <footer>
+        <p>&copy; 2024  App de vaijes.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
